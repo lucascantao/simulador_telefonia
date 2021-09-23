@@ -1,5 +1,4 @@
-
-public class ListadeEspera extends Ligacao
+public class ListadeEspera
 //uso de lista de prioridade max heap;
 //aqui a categoria tem peso em ficar na prioridade;
 {

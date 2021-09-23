@@ -1,23 +1,25 @@
-
 public class Antena {
-	// ter um range e determinar quantas ligacoes podem fazer;
-int ligcount;
 
-public int getLigcount() {
-	return ligcount;
+
+private int ID_antenna;
+private int LIM_Antenna;
+public Antena(int iD_antenna, int lIM_Antenna) {
+	this.ID_antenna = iD_antenna;
+	this.LIM_Antenna = lIM_Antenna;
+}
+public int getLIM_Antenna() {
+	return LIM_Antenna;
 }
 
-public void setLigcount(int ligcount) {
-	this.ligcount = ligcount;
+public void setLIM_Antenna(int lIM_Antenna) {
+	LIM_Antenna = lIM_Antenna;
 }
 
-int[][] range;
-public int[][] getRange() {
-	return range;
+public int getID_antenna() {
+	return ID_antenna;
 }
 
-public void setRange(int[][] range) {
-	this.range = range;
+public void setID_antenna(int iD_antenna) {
+	ID_antenna = iD_antenna;
 }
-
 }
