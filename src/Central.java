@@ -51,7 +51,7 @@ public class Central {
 	
 	public void InitAntenas() {
 		for(int i = 0; i < array_antenas.length; i++) {
-			array_antenas[i] = new Antena(generateId(), 3);
+			array_antenas[i] = new Antena(generateId(), 3, this);
 		}
 	}
 	
