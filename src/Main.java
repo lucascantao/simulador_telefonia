@@ -1,4 +1,5 @@
 import java.util.Random;
+
 public class Main{
 
 	public static void main(String args[]) throws InterruptedException {
@@ -9,6 +10,6 @@ public class Main{
 		//		Thread.sleep(rand.nextInt(duration));
 		//		}
 
-		
+		Central c = new Central();
 	}
 }

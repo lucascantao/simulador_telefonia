@@ -3,9 +3,16 @@ public class Antena {
 	private String ID_antenna;
 	private int LIM_Antenna;
 	private int Counter;
+	private Central central;
 
 	// CONSTRUCTORS
 
+	public Antena(String id, int lim, Central central) {
+		this.ID_antenna = id;
+		this.LIM_Antenna = lim;
+		this.central = central;
+	}
+	
 	public Antena(String iD_antenna, int lIM_Antenna) {
 		this.Counter = 0;
 		this.ID_antenna = iD_antenna;
@@ -46,7 +53,7 @@ public class Antena {
 	// METHODS
 
 	public void requestCall(int request, int destiny) {
-		if (Central.realizarChamada(this.ID_antenna, request, destiny)) {
+		if (central.realizarChamada(this, request, destiny)) {
 			Counter++;
 		}
 	}
